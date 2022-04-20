@@ -1,0 +1,32 @@
+.to-do-list {
+  margin-top: 64px;
+  padding-bottom: 36px;
+
+  &__sorting {
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__sorting-select {
+    padding: 0 16px;
+    width: 260px;
+    height: 32px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    border: 1px solid lightgrey;
+    outline: none;
+  }
+
+  &__list {
+    margin-bottom: 24px;
+  }
+
+  &__item {
+    margin-bottom: 24px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

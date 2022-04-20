@@ -1,0 +1,109 @@
+.to-do-list-item {
+  margin-bottom: 24px;
+  padding: 24px 32px;
+  border-radius: 12px;
+  border: 1px solid lightgrey;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__row {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+
+  &__title {
+    margin-right: 8px;
+  }
+
+  &__value {
+    font-weight: 700;
+  }
+
+  &__edited {
+    font-size: 13px;
+    color: orange;
+  }
+
+  &__text,
+  &__editing-text {
+    margin-top: 16px;
+    line-height: 1.5;
+    font-size: 14px;
+  }
+
+  &__editing-text {
+    padding: 12px 16px;
+    display: block;
+    width: 100%;
+    min-height: 120px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    box-sizing: border-box;
+    resize: vertical;
+    outline: none;
+  }
+
+  &__admin-area {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__is-done {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+  }
+
+  &__is-done-checkbox {
+    margin-right: 4px;
+  }
+
+  &__cancel-btn,
+  &__edit-btn,
+  &__save-btn {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 220px;
+    height: 36px;
+    line-height: 34px;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+
+  &__admin-area-right-side {
+    display: flex;
+  }
+
+  &__cancel-btn {
+    margin-right: 8px;
+    color: black;
+    background-color: white;
+    border: 1px solid lightblue;
+
+    &:hover {
+      color: darkblue;
+      border-color: darkblue;
+    }
+  }
+
+  &__edit-btn,
+  &__save-btn {
+    color: white;
+    background-color: blue;
+    border: 1px solid blue;
+
+    &:hover {
+      background-color: darkblue;
+      border-color: darkblue;
+    }
+  }
+}

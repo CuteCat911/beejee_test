@@ -1,0 +1,95 @@
+.add-new-to-do {
+  margin: 32px 0 36px;
+  padding: 24px 32px;
+  border: 1px solid lightgray;
+  border-radius: 12px;
+
+  &__title {
+    margin-bottom: 24px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &__form {
+    position: relative;
+  }
+
+  &__row {
+    margin-bottom: 24px;
+    display: flex;
+  }
+
+  &__input-wrapper {
+    width: 50%;
+    box-sizing: border-box;
+
+    &:first-child {
+      padding-right: 16px;
+    }
+
+    &:last-child {
+      padding-left: 16px;
+    }
+  }
+
+  &__input-title {
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: gray;
+  }
+
+  &__input,
+  &__textarea {
+    padding: 0 16px;
+    display: block;
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 8px;
+    box-sizing: border-box;
+    outline: none;
+  }
+
+  &__input {
+    height: 32px;
+    line-height: 30px;
+  }
+
+  &__input-error {
+    margin-top: 8px;
+    font-size: 13px;
+    color: red;
+  }
+
+  &__textarea {
+    margin-bottom: 24px;
+    padding: 12px 16px;
+    min-height: 120px;
+    resize: vertical;
+  }
+
+  &__submit-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__submit {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 160px;
+    height: 36px;
+    line-height: 34px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    background-color: blue;
+    border: 1px solid blue;
+    border-radius: 12px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darkblue;
+      border-color: darkblue;
+    }
+  }
+}
